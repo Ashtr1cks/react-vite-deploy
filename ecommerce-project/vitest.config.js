@@ -7,5 +7,6 @@ export default defineConfig({
     environment: 'jsdom',
     globals: true,
     setupFiles: './setupTests.js',
+    base: process.env.VITE_BASE_PATH || "/react-vite-deployment",
   }
 });
